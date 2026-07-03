@@ -1,0 +1,8 @@
+{
+    "SelectedModel": 1,
+    "Host": "127.0.0.1",
+    "Port": 8080,
+    "ContextSize": 4096,
+    "GpuLayers": 0,
+    "ExtraServerArgs": ""
+}
