@@ -97,10 +97,10 @@ If it's malformed, the script falls back to defaults rather than failing.
 
 | # | Model | Size | Label | Best for |
 |---|---|---|---|---|
-| 1 | Qwen3 Coder 1B | ~0.9 GB | STANDARD | Coding |
-| 2 | Phi-4 Mini Uncensored | ~2.3 GB | UNCENSORED | Reasoning |
-| 3 | DeepSeek Lite 1B | ~0.8 GB | STANDARD | Fast/lightweight |
-| 4 | Gemma 4 1B | ~0.9 GB | STANDARD | Writing / UI |
+| 1 | Qwen3 Coder 8B | ~4.9 GB | STANDARD | Coding |
+| 2 | Phi-4 Mini Uncensored | ~2.49 GB | UNCENSORED | Reasoning |
+| 3 | DeepSeek Lite V2 | ~9.8 GB | STANDARD | Fast/lightweight |
+| 4 | Gemma 4 12B | ~4.9 GB | STANDARD | Writing / UI |
 | 5 | Phi-4 Mini 3.8B | ~2.4 GB | STANDARD | General use |
 
 To add or edit a model, add an entry to the `$ModelCatalog` array near the
