@@ -25,14 +25,14 @@ Launch Msty
 
 | File | Purpose |
 |---|---|
-| `install-llamacpp-msty.ps1` | The setup/launch script. Run this every time. |
+| `setup.ps1` | The setup/launch script. Run this every time. |
 | `config.json` | Your settings — which model to load, host/port, context size, etc. |
 
 Running the script also creates, on first run:
 
 ```
 USB_ROOT/
-├── install-llamacpp-msty.ps1
+├── setup.ps1
 ├── config.json
 ├── llama.cpp/          ← llama-server.exe + DLLs
 ├── msty/                ← Msty.exe (portable install)
@@ -51,13 +51,12 @@ USB_ROOT/
 
 ## Quick start
 
-1. Copy `install-llamacpp-msty.ps1` and `config.json` to the root of your USB
+1. Copy `setup.ps1` and `config.json` to the root of your USB
    drive.
 2. Open `config.json` and set `SelectedModel` to the number of the model you
    want (see catalog below).
-3. Right-click `install-llamacpp-msty.ps1` → **Run with PowerShell**
-   (or `powershell -ExecutionPolicy Bypass -File install-llamacpp-msty.ps1`
-   from a terminal).
+3. Right-click `setup.ps1` → **Run with PowerShell**
+   (or `powershell -ExecutionPolicy Bypass -File setup.ps1` from a terminal , the same exist in lanch.bat ).
 4. First run only:
    - llama.cpp downloads and extracts automatically.
    - Msty's installer opens — when it asks for an install location, point it
