@@ -228,7 +228,7 @@ $MstyExe  = "$MstyDir\Msty.exe"
 # GitHub does, so the direct installer URL needs to be supplied here.
 # Get the current one from https://msty.ai (or https://msty.ai/studio/download)
 # and paste it in below.
-$MstyURL = "<MSTY_WINDOWS_INSTALLER_URL>"
+$MstyURL = "https://next-assets.msty.studio/app/latest/win/MstyStudio_x64.exe"
 
 if (Test-Path $MstyExe) {
     Write-Host "      Msty found! Skipping download." -ForegroundColor Green
