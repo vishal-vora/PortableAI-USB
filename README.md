@@ -144,10 +144,12 @@ catalog entry needs fixing.
   file size against `MinBytes`. If it still fails, check the USB has enough
   free space and your connection is stable, then re-run — completed
   downloads are skipped automatically.
-
 ## Notes on portability
-
 Everything the script installs — llama.cpp, Msty, and the model — lives
 under the USB root, so the same drive works on any Windows PC without
 re-downloading anything. Re-running the script on a new machine just starts
 the server and launches Msty; nothing is written outside the USB drive.
+  - **Special Credit to TechJarves** 
+This project was inspired by the **PortableAI on USB** project by **TechJarves** on GitHub.
+While exploring that project, I encountered challenges with the complexity of installing and configuring **AnythingLLM**, along with the additional dependency on **Ollama**. These extra layers increased the setup effort and reduced the portability and simplicity of the solution.
+This inspired me to develop a streamlined alternative that eliminates the need for both **AnythingLLM** and **Ollama**, allowing GGUF models to run directly through a lightweight, self-contained interface. The result is a truly portable, zero-install AI environment that can be carried on a USB drive, requires minimal configuration, and is designed for ease of use, performance, and offline operation.
