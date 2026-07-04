@@ -114,20 +114,25 @@ downloads).
 Releases API for `ggml-org/llama.cpp` and grabs the Windows CPU x64 build.
 No configuration needed.
 
-**Msty** doesn't expose a stable, scriptable "latest release" link, so the
-installer URL has to be supplied manually:
-
-1. Open <https://msty.ai/studio/download> and copy the Windows download link.
-2. Paste it into the `$MstyURL` variable in Step 3 of the script (replacing
-   `<MSTY_WINDOWS_INSTALLER_URL>`).
-3. On first run, Msty's own installer will open — install it to
-   `USB_ROOT\msty` so the whole kit stays portable.
+**Msty** downloads automatically and instter verbously installs 
+the folder is located inside **Usbroot:\msty\**  names **MstyStudio** 
+Run **MstyStudio.exe** ince the Model comletes it's downloading process.
+and allocates URL supplied by llama.cpp
 
 **Model URLs**: several catalog entries ship with a `<HF_DOWNLOAD_URL>`
 placeholder. Replace each with the model's actual `resolve/main/...gguf`
 link from its Hugging Face page before selecting that model — the script
 will refuse to download a placeholder and will tell you exactly which
 catalog entry needs fixing.
+
+## Msty integration with llama.cpp
+Link llama.cpp Into **Msty's** Local Model Hub
+Now that **llama.cpp** is hosting an API server on port 8080, tell Msty to grab it
+1.	Open Msty and navigate to the **Model Hub** from the sidebar.
+2.	Click on the **Local Models** tab.
+3.	Look for the **Llama.cpp** configuration section.
+4.	Set the **Endpoint URL** to: http://127.0.01:8080/v1 (the OpenAI-compatible local port).
+5.	Click **Save/Connect**.
 
 ## Troubleshooting
 
