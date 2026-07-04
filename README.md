@@ -115,7 +115,7 @@ Releases API for `ggml-org/llama.cpp` and grabs the Windows CPU x64 build.
 No configuration needed.
 
 **Msty** downloads automatically and instter verbously installs 
-the folder is located inside **Usbroot:\msty**  names **MstyStudio** 
+the folder is located inside **Usbroot:\msty**  named **MstyStudio** 
 Run **MstyStudio.exe** ince the Model comletes it's downloading process.
 and allocates URL supplied by llama.cpp
 
